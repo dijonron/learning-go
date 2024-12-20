@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	// pointers()
+	pointers()
 
-	// ex1()
-	// ex2()
+	ex1()
+	ex2()
 	ex3()
 }
 
@@ -48,7 +48,7 @@ func ex1() {
 	pp := MakePersonPointer("Ronald", "McDonald", 84)
 	fmt.Println("person pointer:", pp)
 
-	//	./main.go:46:25: &Person{...} escapes to heap
+	// ./main.go:46:25: &Person{...} escapes to heap
 	// the pointer is returned to the stack, but he value it points to escapes to the heap
 	fmt.Println()
 }
